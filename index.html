@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electrosharks #21544 | Portafolio</title>
+    <link rel="icon" type="image/png" href="public/images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- CSS solo para volver las fotos circulares perfectas -->
+    <style>
+        .member-card img {
+            width: 120px !important;
+            height: 120px !important;
+            border-radius: 50% !important;
+            object-fit: cover !important;
+            margin: 0 auto 15px auto !important;
+            display: block !important;
+        }
+        
+        .member-card {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo-container">
+            <img src="public/images/logo.png" alt="Electrosharks Logo" class="logo-img">
+            <span>Electrosharks #21544</span>
+        </div>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#portafolio">Portafolio</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+<header id="inicio">
+        <div class="hero-content">
+            <img src="public/images/logo.png" alt="Electrosharks Team" class="logojj">
+            <br>
+            <img src="public/images/nombre.png" alt="Electrosharks Team" class="brand-name">
+            <p>Equipo de robótica del Instituto Americano Joseph John Thomson. Estudiantes de 1er a 5to año unidos por una sola pasión: la robótica.</p>
+            <div class="hero-actions">
+                <a href="#portafolio" class="btn-action"><i class="fas fa-folder-open"></i> Ver portafolio</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="portafolio">
+        <div class="section-title">
+            <h2>Portafolio por secciones</h2>
+            <p>Selecciona una sección para ver la información del equipo, integrantes, metas, diseño del robot y aprendizajes técnicos.</p>
+        </div>
+
+        <div class="portfolio-shell" id="tabs-container">
+            
+           
+            <button class="portfolio-hamburger <!-- Botón Hamburguesa exclusivo para las secciones del Portafolio en Móvil -->" id="portfolio-hamburger-btn" aria-label="Abrir secciones del portafolio">
+                <i class="fas fa-bars"></i> Ver Secciones
+            </button>
+
+            <!-- Menú de pestañas con la clase especial tabs-menu -->
+            <div class="tabs tabs-menu" id="portfolio-tabs" role="tablist" aria-label="Secciones del portafolio Electrosharks">
+                <button class="tab-btn active" type="button" data-target="panel-nosotros" role="tab" aria-selected="true"><i class="fas fa-water"></i> Nosotros</button>
+                <button class="tab-btn" type="button" data-target="panel-integrantes" role="tab" aria-selected="false"><i class="fas fa-users"></i> Integrantes</button>
+                <button class="tab-btn" type="button" data-target="panel-valores" role="tab" aria-selected="false"><i class="fas fa-star"></i> Valores y metas</button>
+                <button class="tab-btn" type="button" data-target="panel-sustain" role="tab" aria-selected="false"><i class="fas fa-seedling"></i> Sustain</button>
+                <button class="tab-btn" type="button" data-target="panel-transfer" role="tab" aria-selected="false"><i class="fas fa-arrow-right-arrow-left"></i> Transfer</button>
+                <button class="tab-btn" type="button" data-target="panel-connect" role="tab" aria-selected="false"><i class="fas fa-handshake-angle"></i> Connect</button>
+            </div>
+
+            <div class="content-card">
+                <article class="tab-panel active" id="panel-nosotros" role="tabpanel">
+                    <div class="panel-kicker">Meet the sharks</div>
+                    <h3>Somos Electrosharks</h3>
+                    <p class="lead">Somos un equipo de FIRST Tech Challenge del Instituto Americano Joseph John Thomson. Nuestro equipo está impulsado por el ingenio de estudiantes de 1er año a 5to año, unidos por una sola pasión: la robótica.</p>
+                    <p>Desde 2023 hemos sido una fuerza motriz en la Copa Ka’i. También tuvimos la oportunidad de participar en el Italy Regional Championship 2026, donde competimos contra 37 equipos de alrededor del mundo, quedamos en el 11vo puesto en playoffs y ganamos el Reach Award 2026.</p>
+                    <div class="note-box">
+                        <strong>“We are ready to bite”</strong><br>
+                        Nuestro slogan representa que estamos preparados para enfrentar cualquier desafío con la determinación de un tiburón. Más que competidores, somos embajadores de la misión de FIRST.
+                    </div>
+                    <div class="grid">
+                        <div class="card">
+                            <h4>Ganadores invictos de la Copa Kai 2026</h4>
+                            <p>Representando al colegio thomson en la copa kai, junto a mipha, ganamos el Control Award y el Grand Challenge Award</p>
+                        </div>
+                        <div class="card">
+                            <h4>Reach Award 2026</h4>
+                            <p>Reconocimiento obtenido en el Italy Regional Championship 2026.</p>
+                        </div>
+                        <div class="card">
+                            <h4>Innovate Award</h4>
+                            <p>Participación sostenida desde 2023 como parte del crecimiento del equipo.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tab-panel" id="panel-integrantes" role="tabpanel">
+                    <div class="panel-kicker">Meet the team</div>
+                    <h3>Integrantes del equipo</h3>
+                    <p class="lead">Roles principales, temporadas y rookies del equipo Electrosharks.</p>
+                    
+                    <!-- Contenedor con Scroll interno para Integrantes -->
+                    <div class="grid scrollable-grid">
+                        <div class="card member-card">
+                            <h4>Jorge Parra</h4>
+                            <p class="role">Captain · Head Programmer · Driver</p>
+                            <p class="season">3rd season</p>
+                            <img src="public/images/integrantes/IMG_2833.webp" alt="Jorge Parra">
+                        </div>
+                        <div class="card member-card">
+                            <h4>Sebastian Suárez</h4>
+                            <p class="role">Programmer · Mechanic</p>
+                            <p class="season">2nd season</p>                            
+                            <img src="public/images/integrantes/IMG_2829.webp" alt="Sebastian Suárez">
+                        </div>
+                        <div class="card member-card">
+                            <h4>Ayah Chams</h4>
+                            <p class="role">PR · Social Media</p>
+                            <p class="season">2nd season</p>
+                            <img src="public/images/integrantes/WhatsApp Image 2026-06-10 at 8.15.44 AM.webp" alt="Ayah Chams">
+                        </div>
+                        <div class="card member-card">
+                            <h4>Fabiana Corona</h4>
+                            <p class="role">Portfolio · Human Player</p>
+                            <p class="season">4th season</p>
+                            <img src="public/images/integrantes/IMG_2846.webp" alt="Fabiana Corona">
+                        </div>
+                        <div class="card member-card">
+                            <h4>Sofía Pérez</h4>
+                            <p class="role">Portfolio · Spokesperson</p>
+                            <p class="season">3rd season</p>
+                            <img src="public/images/integrantes/IMG_2341.webp" alt="Sofía Pérez">
+                        </div>
+                        <div class="card member-card">
+                            <h4>Heberto Andrade</h4>
+                            <p class="role">Spokesperson · Portfolio</p>
+                            <p class="season">2nd season</p>
+                            <img src="public/images/integrantes/WhatsApp-Image-2026-06-02-at-1.43.52-PM.webp" alt="Heberto Andrade">
+                        </div>
+                        <div class="card member-card">
+                            <h4>Ana Ortiz</h4>
+                            <p class="role">Finances · Mind of Mechanics</p>
+                            <p class="season">3rd season</p>
+                            <img src="public/images/integrantes/IMG_2834.webp" alt="Ana Ortiz">
+                        </div>
+                        <div class="card member-card">
+                            <h4>Marcos Ortega</h4>
+                            <p class="role">Driver · Mechanic</p>
+                            <p class="season">2st season</p>
+                            <img src="public/images/integrantes/img.webp" alt="Marcos Ortega">
+                        </div>
+                        <div class="card member-card">
+                            <h4>Simón Thielens</h4>
+                            <p class="role">CAD Designer</p>
+                            <p class="season">2nd season</p>
+                            <img src="public/images/integrantes/a.webp" alt="Simón Thielens">
+                        </div>
+                        <div class="card member-card">
+                            <h4>Sofía Camargo</h4>
+                            <p class="role">PR · Social Media</p>
+                            <p class="season">2nd season</p>
+                            <img src="public/images/integrantes/imagen.webp" alt="Sofía Camargo">
+                        </div>
+                        <div class="card member-card">
+                            <h4>Erwin González</h4>
+                            <p class="role">Mechanics</p>
+                            <p class="season">2nd season</p>
+                            <img src="public/images/integrantes/WhatsApp-Image-2026-06-02-at-1.43.52-PM-_1_.webp" alt="Erwin González">
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tab-panel" id="panel-valores" role="tabpanel">
+                    <div class="panel-kicker">Team goals</div>
+                    <h3>Valores y metas de aprendizaje</h3>
+                    <p class="lead">El equipo combina metas técnicas, comunicación, creatividad y crecimiento personal.</p>
+                    <div class="split">
+                        <div class="card">
+                            <h4>Valores del equipo</h4>
+                            <div class="pill-list">
+                                <span class="pill">Electro</span>
+                                <span class="pill">Sinceridad</span>
+                                <span class="pill">Honestidad</span>
+                                <span class="pill">Ambición</span>
+                                <span class="pill">Respeto</span>
+                                <span class="pill">Gracious Professionalism</span>
+                                <span class="pill">Kinestesia</span>
+                                <span class="pill">Superación</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <h4>Metas individuales registradas</h4>
+                            <ul class="list">
+                                <li><strong>Samuel:</strong> perfeccionar sus habilidades en diseño 3D.</li>
+                                <li><strong>Sofía Pérez:</strong> mejorar sus habilidades de redacción y habilidades sociales.</li>
+                                <li><strong>Sofía Camargo:</strong> aprender a editar y hacer videos virales.</li>
+                                <li><strong>Erwin:</strong> aprender los conceptos básicos de la mecánica.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tab-panel" id="panel-sustain" role="tabpanel">
+                    <div class="panel-kicker">Sustain</div>
+                    <h3>Crecimiento sostenible del equipo</h3>
+                    <p class="lead">La sostenibilidad del equipo se trabaja desde la formación de rookies, el uso de herramientas como impresión 3D y la planificación de temporadas completas.</p>
+                    <div class="grid">
+                        <div class="card">
+                            <h4>Rookies</h4>
+                            <p>Incorporación de nuevos integrantes para asegurar continuidad del equipo.</p>
+                        </div>
+                        <div class="card">
+                            <h4>Impresora 3D</h4>
+                            <p>Uso de fabricación propia para prototipar, mejorar piezas y resolver necesidades técnicas.</p>
+                        </div>
+                        <div class="card">
+                            <h4>Sostenibilidad económica</h4>
+                            <p>Organización de recursos para sostener el trabajo competitivo durante varias temporadas.</p>
+                        </div>
+                    </div>
+                    <div class="note-box">
+                        Este año el equipo quiso empezar a trabajar desde enero a pesar de las dificultades, y se propuso la meta de comenzar desde septiembre, justo cuando esté el reto oficial.
+                    </div>
+                    <div class="pill-list">
+                        <span class="pill">Pre-season</span>
+                        <span class="pill">In-season</span>
+                        <span class="pill">Off-season</span>
+                        <span class="pill">2026</span>
+                        <span class="pill">2027</span>
+                        <span class="pill">2028</span>
+                    </div>
+                </article>
+
+                <article class="tab-panel" id="panel-transfer" role="tabpanel">
+                    <div class="panel-kicker">From indexing to transferring</div>
+                    <h3>De indexer a transfer mechanism</h3>
+                    <p class="lead">SILEX usaba un indexer con 3 cucharas para llevar los artifacts al shooter. Fue innovador, pero generó retos mecánicos y de programación.</p>
+                    <div class="split">
+                        <div class="card">
+                            <h4>Desventajas del indexer</h4>
+                            <ul class="list">
+                                <li>Rendimiento lento.</li>
+                                <li>Fallas constantes por partido.</li>
+                                <li>Poca versatilidad.</li>
+                                <li>Difícil de controlar para los drivers.</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h4>Nuevo transfer mechanism</h4>
+                            <p>El sistema se basa en rieles personalizados para los artifacts. Luego son empujados por una serie de Gecko wheels de GoBilda hacia el shooter, donde una compliant wheel completa la transferencia.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tab-panel" id="panel-connect" role="tabpanel">
+                    <div class="panel-kicker">Connect</div>
+                    <h3>Mentores y comunidad</h3>
+                    <p class="lead">Nuestros mentores ayudan al equipo con determinación, disciplina y acompañamiento durante el proceso.</p>
+                    <div class="note-box">
+                        En el portafolio recibido, esta sección aparece incompleta. Dejé una base editable para que puedan ampliar el texto de mentores, outreach, innovate y control cuando tengan el contenido final.
+                    </div>
+                    <div class="grid">
+                        <div class="card">
+                            <h4>Mentoría</h4>
+                            <p>Acompañamiento técnico y humano para sostener el ritmo de trabajo.</p>
+                        </div>
+                        <div class="card">
+                            <h4>Disciplina</h4>
+                            <p>Organización y seguimiento para convertir ideas en resultados.</p>
+                        </div>
+                        <div class="card">
+                            <h4>Comunidad</h4>
+                            <p>Espacio reservado para agregar iniciativas de outreach y conexión externa.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contacto">
+        <div class="contact-card">
+            <h2>Contacto y redes</h2>
+            <p>Conecta con Electrosharks para patrocinio, comunidad y seguimiento del equipo.</p>
+
+            <div class="direct-contact">
+                <p><i class="fas fa-envelope"></i> electrosharksvzla@gmail.com</p>
+            </div>
+
+            <div class="social-links">
+                <a href="https://www.instagram.com/electrosharks_ftc/" target="_blank" title="Instagram" aria-label="Instagram Electrosharks">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/@electrosharks_ftc" target="_blank" title="TikTok" aria-label="TikTok Electrosharks">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023-2026 Electrosharks #21544 | Maracaibo, Zulia, Venezuela.</p>
+    </footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
