@@ -1,3 +1,3 @@
-this is the website for the ftc team #21544 electrosharks
+This is the website for our FTC Team #21544 Electrosharks
 
-we are ready to bite
+It features some of our biggest awards and the members of the team
